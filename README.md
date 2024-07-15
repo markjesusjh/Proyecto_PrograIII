@@ -1,12 +1,19 @@
 # Plataforma de Streaming (Programación III: Proyecto Final (2024-1) )
 
-## Descripción
-Breve descripción del proyecto, sus objetivos y características principales.
+## Introducción
+El Sistema de Recomendación de Películas es una aplicación en C++ diseñada para ayudar a los usuarios a buscar películas por título o etiquetas, y recibir recomendaciones basadas en sus gustos. Emplea varios patrones de diseño y algoritmos para garantizar un rendimiento eficiente y una interfaz amigable.
 
 ## Integrantes
 - **Mark Antony Jesus Herrera** - [GitHub](https://github.com/markjesusjh)
-- **Nombre 2** - [GitHub](https://github.com/usuario2)
-- **Nombre 3** - [GitHub](https://github.com/usuario3)
+- **David Quispe** - [GitHub](https://github.com/DavidUTECo)
+- **Fernando Padilla** - [GitHub](https://github.com/usuario3)
+
+## Características
+- Búsqueda de películas por título o etiqueta.
+- Posibilidad de dar "Me gusta" a las películas y ver recomendaciones basadas en las películas que te gustan.
+- Agregar películas a una lista de "Ver más tarde".
+- Resultados de búsqueda paginados.
+- Interfaz de consola intuitiva e interactiva con soporte para colores.
 
 ## Requisitos Previos
 - Lista de software y versiones necesarias para ejecutar el proyecto (por ejemplo, c++)
