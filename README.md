@@ -40,8 +40,12 @@ Para instalar y ejecutar el Sistema de Recomendación de Películas, sigue estos
     ```bash
     cd Proyecto_PrograIII
     ```
+3. Descargar y agregar el archivo .csv en el directorio de Proyecto_PrograIII
 
-3. Construye el proyecto usando CMake:
+    link del archivo
+   [https://drive.google.com/file/d/1iusSIbmXJW_OUBm6X7Ik593rgCGPCPza/view]
+   
+4. Construye el proyecto usando CMake:
     ```bash
     mkdir build
     cd build
@@ -49,9 +53,9 @@ Para instalar y ejecutar el Sistema de Recomendación de Películas, sigue estos
     make
     ```
 
-4. Ejecuta el archivo ejecutable:
+5. Ejecuta el archivo ejecutable:
     ```bash
-    ./movie_recommendation_system
+    ./Proyecto_PrograIII
     ```
 
 ## Uso
