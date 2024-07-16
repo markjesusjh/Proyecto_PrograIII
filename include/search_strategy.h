@@ -21,6 +21,13 @@ public:
   }
 };
 
+class TagSearchStrategy : public SearchStrategy {
+public:
+  std::vector<Utilities::Movie> search(const std::string &query) override {
+    return MovieDB::MovieDatabase::getInstance().searchByTag(query);
+  }
+};
+
 } // namespace Search
 
 #endif // SEARCH_STRATEGY_H
