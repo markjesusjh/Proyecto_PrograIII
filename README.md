@@ -40,7 +40,7 @@ Para instalar y ejecutar el Sistema de Recomendación de Películas, sigue estos
     ```bash
     cd Proyecto_PrograIII
     ```
-3. Descargar y agregar el archivo .csv en el directorio de Proyecto_PrograIII
+3. Descargar y agregar el archivo "mpst_full_data.csv" en el directorio de Proyecto_PrograIII
 
     link del archivo
    [https://drive.google.com/file/d/1iusSIbmXJW_OUBm6X7Ik593rgCGPCPza/view]
