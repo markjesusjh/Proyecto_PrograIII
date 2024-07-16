@@ -15,6 +15,7 @@
 - [Manejo de Errores](#manejo-de-errores)
 - [Bibliografía](#bibliografía)
 - [Contribuyentes](#contribuyentes)
+- [Video](#Link-del-video-explicativo)
 
 ## Introducción
 El Sistema de Recomendación de Películas es una aplicación en C++ diseñada para ayudar a los usuarios a buscar películas por título o etiquetas, y recibir recomendaciones basadas en sus gustos. Emplea varios patrones de diseño y algoritmos para garantizar un rendimiento eficiente y una interfaz amigable.
@@ -102,7 +103,7 @@ La aplicación incluye un manejo robusto de errores para asegurar una experienci
 - Gestión eficiente de memoria y limpieza de recursos.
 
 ## Link del video explicativo
-| (Link del video explicativo) [https://drive.google.com/drive/folders/1L1ace5JHIzD2C6N2l7PLPldDwHFuyBfd?usp=sharing]|
+| [https://drive.google.com/drive/folders/1L1ace5JHIzD2C6N2l7PLPldDwHFuyBfd?usp=sharing](Link del video explicativo)|
 
 ## Bibliografía
 1. Gamma, E., Helm, R., Johnson, R., & Vlissides, J. (1994). *Design Patterns: Elements of Reusable Object-Oriented Software*. Addison-Wesley Professional.
