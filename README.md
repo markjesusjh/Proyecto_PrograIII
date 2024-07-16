@@ -38,7 +38,7 @@ Para instalar y ejecutar el Sistema de Recomendación de Películas, sigue estos
 
 2. Navega al directorio del proyecto:
     ```bash
-    cd movie-recommendation-system
+    cd Proyecto_PrograIII
     ```
 
 3. Construye el proyecto usando CMake:
