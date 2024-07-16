@@ -10,6 +10,11 @@ public:
     observers.push_back(observer);
   }
 
+  void notifyObservers() {
+    for (const auto &observer : observers) {
+      observer();
+    }
+  }
 
 private:
   std::vector<std::function<void()>> observers;
