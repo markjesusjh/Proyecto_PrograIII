@@ -68,6 +68,34 @@ public:
     pauseConsole();
   }
 
+  void searchAndDisplayMovies(const std::string &keyword) {
+    auto results = MovieDB::MovieDatabase::getInstance().searchByTitle(keyword);
+    displayMovies(results);
+  }
+
+  void searchAndDisplayMoviesByTag(const std::string &tag) {
+    auto results = MovieDB::MovieDatabase::getInstance().searchByTag(tag);
+    displayMovies(results);
+  }
+
+  void selectMovie(const Utilities::Movie &movie) {
+    clearConsole();
+    std::cout << "\033[1;36mSinopsis de la película \033[1;33m" << movie.title
+              << "\033[0m:\n"
+              << movie.plot_synopsis << "\n";
+    std::cout << "\033[1;32m[1] Like\n[2] Ver más tarde\n[3] Volver\033[0m\n";
+    int choice;
+    std::cin >> choice;
+    if (choice == 1) {
+      likedMovies.insert(movie);
+      notifyObservers();
+    } else if (choice == 2) {
+      laterList.insert(movie);
+      notifyObservers();
+    }
+    clearConsole();
+  }
+
 private:
   std::set<Utilities::Movie> likedMovies;
   std::set<Utilities::Movie> laterList;
