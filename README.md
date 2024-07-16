@@ -117,7 +117,7 @@ La aplicación incluye un manejo robusto de errores para asegurar una experienci
 | **Mark Jesus** | 
 |:------------:|
 | ![Mark Jesus](https://avatars.githubusercontent.com/u/91276766?v=4) | 
-| [https://github.com/DavidUTECo](https://github.com/markjesusjh) |
+| [https://github.com/markjesusjh](https://github.com/markjesusjh) |
 
 | **Fernando Padilla** | 
 |:------------:|
