@@ -103,7 +103,7 @@ La aplicación incluye un manejo robusto de errores para asegurar una experienci
 - Gestión eficiente de memoria y limpieza de recursos.
 
 ## Link del video explicativo
-| [https://drive.google.com/drive/folders/1L1ace5JHIzD2C6N2l7PLPldDwHFuyBfd?usp=sharing](Link del video explicativo) |
+[https://drive.google.com/drive/folders/1L1ace5JHIzD2C6N2l7PLPldDwHFuyBfd?usp=sharing]
 
 ## Bibliografía
 1. Gamma, E., Helm, R., Johnson, R., & Vlissides, J. (1994). *Design Patterns: Elements of Reusable Object-Oriented Software*. Addison-Wesley Professional.
