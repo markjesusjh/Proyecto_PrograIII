@@ -1,12 +1,23 @@
-# Plataforma de Streaming (Programación III: Proyecto Final (2024-1) )
+# Sistema de Recomendación de Películas
+
+![Sistema de Recomendación de Películas](resources/icon.png)
+
+## Índice
+- [Introducción](#introducción)
+- [Características](#características)
+- [Instalación](#instalación)
+- [Uso](#uso)
+- [Patrones de Diseño](#patrones-de-diseño)
+- [Algoritmos y Estructuras de Datos](#algoritmos-y-estructuras-de-datos)
+- [Programación Genérica](#programación-genérica)
+- [Programación Concurrente](#programación-concurrente)
+- [Namespaces](#namespaces)
+- [Manejo de Errores](#manejo-de-errores)
+- [Bibliografía](#bibliografía)
+- [Contribuyentes](#contribuyentes)
 
 ## Introducción
 El Sistema de Recomendación de Películas es una aplicación en C++ diseñada para ayudar a los usuarios a buscar películas por título o etiquetas, y recibir recomendaciones basadas en sus gustos. Emplea varios patrones de diseño y algoritmos para garantizar un rendimiento eficiente y una interfaz amigable.
-
-## Integrantes
-- **Mark Antony Jesus Herrera** - [GitHub](https://github.com/markjesusjh)
-- **David Quispe** - [GitHub](https://github.com/DavidUTECo)
-- **Fernando Padilla** - [GitHub](https://github.com/usuario3)
 
 ## Características
 - Búsqueda de películas por título o etiqueta.
@@ -15,42 +26,100 @@ El Sistema de Recomendación de Películas es una aplicación en C++ diseñada p
 - Resultados de búsqueda paginados.
 - Interfaz de consola intuitiva e interactiva con soporte para colores.
 
-## Requisitos Previos
-- Lista de software y versiones necesarias para ejecutar el proyecto (por ejemplo, c++)
-- Cualquier otro requisito previo necesario.
+## Instalación
+Para instalar y ejecutar el Sistema de Recomendación de Películas, sigue estos pasos:
 
-## Instrucciones de Instalación
-1. **Clonar el repositorio:**
+1. Clona el repositorio:
     ```bash
     git clone https://github.com/markjesusjh/Proyecto_PrograIII.git
-    cd tu_proyecto
     ```
-2. **Instalar dependencias:**
 
-## Instrucciones de Ejecución
-1. **Ejecutar la aplicación:**
+2. Navega al directorio del proyecto:
     ```bash
-    c++ main.cpp
+    cd movie-recommendation-system
     ```
 
-## Estructura del Proyecto
-- **/src**: Código fuente del proyecto.
-- **/docs**: Documentación del proyecto.
-- **/tests**: Pruebas y test cases.
-- **/config**: Archivos de configuración.
+3. Construye el proyecto usando CMake:
+    ```bash
+    mkdir build
+    cd build
+    cmake ..
+    make
+    ```
+
+4. Ejecuta el archivo ejecutable:
+    ```bash
+    ./movie_recommendation_system
+    ```
 
 ## Uso
-Instrucciones sobre cómo usar la aplicación una vez que está en funcionamiento. Incluye ejemplos y capturas de pantalla si es posible.
+Al ejecutar la aplicación, se te presentarán las siguientes opciones:
 
-## Contribuciones
-1. Haz un fork del proyecto.
-2. Crea una nueva rama (`git checkout -b feature/nueva-funcionalidad`).
-3. Realiza tus cambios y haz commit (`git commit -m 'Añadir nueva funcionalidad'`).
-4. Sube tus cambios (`git push origin feature/nueva-funcionalidad`).
-5. Abre un Pull Request.
+1. Buscar por título
+2. Buscar por etiqueta
+3. Ver películas que me gustaron
+4. Ver lista de "Ver más tarde"
+5. Salir
 
-## Licencia
-Este proyecto está bajo la Licencia MIT - mira el archivo [LICENSE](LICENSE) para más detalles.
+### Ejemplo de Uso
+- Busca películas ingresando un título o etiqueta.
+- Ve la sinopsis y elige si te gusta o si quieres verla más tarde.
+- Ve recomendaciones basadas en las películas que te gustan.
 
-## Contacto
+## Patrones de Diseño
+En este proyecto se utilizan los siguientes patrones de diseño:
+1. **Singleton**: Para gestionar la instancia de la base de datos de películas.
+2. **Factory Method**: Para la creación de instancias de películas.
+3. **Observer**: Para manejar los cambios en las listas de "Me gusta" y "Ver más tarde".
+4. **Strategy**: Para diferentes estrategias de búsqueda (por título, por etiqueta).
+5. **Command**: Para encapsular las acciones del usuario como dar "Me gusta" o agregar a "Ver más tarde".
 
+## Algoritmos y Estructuras de Datos
+El proyecto hace uso de algoritmos y estructuras de datos eficientes, incluyendo:
+- **Búsqueda Binaria**: Para una búsqueda rápida de películas.
+- **Hash Maps**: Para acceso rápido a los datos de las películas.
+- **Sets**: Para gestionar colecciones únicas de películas que te gustan y de "Ver más tarde".
+- **Ordenamiento y filtrado personalizados**: Para mostrar las 10 mejores películas recomendadas.
+
+## Programación Genérica
+La programación genérica se utiliza en el proyecto para crear funciones y clases que puedan trabajar con cualquier tipo de datos. Por ejemplo, se utiliza una función genérica de búsqueda que puede operar tanto sobre títulos como sobre etiquetas.
+
+## Programación Concurrente
+La programación concurrente se implementa para mejorar el rendimiento en las búsquedas. Utilizamos `std::thread` y `std::future` para realizar operaciones en paralelo, permitiendo que las búsquedas sean más rápidas y eficientes.
+
+## Namespaces
+El proyecto utiliza namespaces para organizar el código y evitar conflictos de nombres. Los principales namespaces utilizados son:
+
+- `Utilities`: Contiene las estructuras y funciones utilitarias.
+- `MovieDB`: Contiene las clases relacionadas con la base de datos de películas.
+- `UI`: Contiene las clases relacionadas con la interfaz de usuario.
+- `Search`: Contiene las estrategias de búsqueda.
+
+## Manejo de Errores
+La aplicación incluye un manejo robusto de errores para asegurar una experiencia de usuario fluida:
+- Manejo adecuado de entradas inválidas.
+- Provisión de retroalimentación para acciones (dar "Me gusta", agregar a "Ver más tarde").
+- Gestión eficiente de memoria y limpieza de recursos.
+
+## Bibliografía
+1. Gamma, E., Helm, R., Johnson, R., & Vlissides, J. (1994). *Design Patterns: Elements of Reusable Object-Oriented Software*. Addison-Wesley Professional.
+2. Meyers, S. (2005). *Effective C++: 55 Specific Ways to Improve Your Programs and Designs*. Addison-Wesley Professional.
+3. Josuttis, N. M. (2012). *The C++ Standard Library: A Tutorial and Reference*. Addison-Wesley Professional.
+4. Coplien, J. O. (1992). *Advanced C++ Programming Styles and Idioms*. Addison-Wesley Professional.
+
+## Contribuyentes
+
+| **David Quispe** | 
+|:------------:|
+| ![David Quispe](https://avatars.githubusercontent.com/u/91276766?v=4) | 
+| [https://github.com/DavidUTECo](https://github.com/DavidUTECo) |
+
+| **Mark Jesus** | 
+|:------------:|
+| ![Mark Jesus](https://avatars.githubusercontent.com/u/91276766?v=4) | 
+| [https://github.com/DavidUTECo](https://github.com/markjesusjh) |
+
+| **Fernando Padilla** | 
+|:------------:|
+| ![Fernando Padilla](https://avatars.githubusercontent.com/u/91276766?v=4) | 
+| [https://github.com/nosoyfernandow](https://github.com/nosoyfernandow) |
