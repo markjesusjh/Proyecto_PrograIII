@@ -13,9 +13,10 @@
 - [Programación Concurrente](#programación-concurrente)
 - [Namespaces](#namespaces)
 - [Manejo de Errores](#manejo-de-errores)
+- [Video](#Link-del-video-explicativo)
 - [Bibliografía](#bibliografía)
 - [Contribuyentes](#contribuyentes)
-- [Video](#Link-del-video-explicativo)
+
 
 ## Introducción
 El Sistema de Recomendación de Películas es una aplicación en C++ diseñada para ayudar a los usuarios a buscar películas por título o etiquetas, y recibir recomendaciones basadas en sus gustos. Emplea varios patrones de diseño y algoritmos para garantizar un rendimiento eficiente y una interfaz amigable.
