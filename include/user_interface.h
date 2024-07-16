@@ -96,6 +96,42 @@ public:
     clearConsole();
   }
 
+  void displayMovies(
+      const std::vector<Utilities::Movie> &movies) { // Mover a sección pública
+    int page = 0;
+    int perPage = 5;
+    while (true) {
+      clearConsole();
+      int start = page * perPage;
+      int endIndexMovie =
+          (std::min)(start + perPage, static_cast<int>(movies.size()));
+      if (start >= endIndexMovie) {
+        std::cout << "\033[1;31mNo hay más resultados.\033[0m\n";
+        pauseConsole();
+        break;
+      }
+      for (int i = start; i < endIndexMovie; ++i) {
+        std::cout << "\033[1;33m[" << i + 1 << "] " << movies[i].title
+                  << "\033[0m (" << movies[i].imdb_id << ")\n";
+      }
+      std::cout << "\033[1;32m[n] Siguiente página, [q] Salir, [#] Seleccionar "
+                   "número\033[0m\n";
+      std::string choice;
+      std::cin >> choice;
+      if (choice == "q")
+        break;
+      if (choice == "n")
+        ++page;
+      else {
+        int index = std::stoi(choice) - 1;
+        if (index >= start && index < endIndexMovie) {
+          selectMovie(movies[index]);
+          clearConsole();
+        }
+      }
+    }
+  }
+
 private:
   std::set<Utilities::Movie> likedMovies;
   std::set<Utilities::Movie> laterList;
