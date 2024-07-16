@@ -101,6 +101,9 @@ La aplicación incluye un manejo robusto de errores para asegurar una experienci
 - Provisión de retroalimentación para acciones (dar "Me gusta", agregar a "Ver más tarde").
 - Gestión eficiente de memoria y limpieza de recursos.
 
+## Link del video explicativo
+| (Link del video explicativo) [https://drive.google.com/drive/folders/1L1ace5JHIzD2C6N2l7PLPldDwHFuyBfd?usp=sharing]|
+
 ## Bibliografía
 1. Gamma, E., Helm, R., Johnson, R., & Vlissides, J. (1994). *Design Patterns: Elements of Reusable Object-Oriented Software*. Addison-Wesley Professional.
 2. Meyers, S. (2005). *Effective C++: 55 Specific Ways to Improve Your Programs and Designs*. Addison-Wesley Professional.
